@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strict": true, // 启用所有严格类型检查选项。启用 --strict相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict， --strictNullChecks和 --strictFunctionTypes和--strictPropertyInitialization
+
+    "target": "es2016",
+
+    "module": "esnext",
+
+    "lib": ["DOM", "ES2017"], // 编译环境
+
+    "removeComments": true, // 删除所有注释，除了以 /!开头的版权信息。
+
+    "preserveConstEnums": true, // 保留 const和 enum声明。
+
+    "esModuleInterop": true,
+
+    "outDir": "./dist",
+
+    "sourceMap": true
+  },
+
+  "include": ["./src"],
+
+  "exclude": ["node_modules"]
+}
