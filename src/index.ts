@@ -1,3 +1,4 @@
-import { longestCommonPrefix } from './14.最长公共前缀'
-console.log(longestCommonPrefix(["flower", "flow", "flight"]))
+import { isValid } from "./20.有效的括号";
+
+console.log(isValid("({}{}{}[][{}])"));
 
