@@ -1,3 +1,2 @@
-import { removeDuplicates } from "./26.删除有序数组中的重复项";
-
-console.log(removeDuplicates([1,1,2]));
+import { removeElement } from './27.移除元素'
+console.log(removeElement([3, 2, 2, 3], 3))
