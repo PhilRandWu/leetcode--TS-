@@ -1,2 +1,3 @@
-import { removeElement } from './27.移除元素'
-console.log(removeElement([3, 2, 2, 3], 3))
+import { strStr } from "./28.实现-str-str";
+
+console.log(strStr('hello',"ll"));
