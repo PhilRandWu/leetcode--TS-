@@ -1,3 +1,3 @@
-import { strStr } from "./28.实现-str-str";
+import { searchInsert } from "./35.搜索插入位置";
 
-console.log(strStr('hello',"ll"));
+console.log(searchInsert([1,3,5,6],5))
