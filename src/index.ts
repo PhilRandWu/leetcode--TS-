@@ -1,3 +1,4 @@
-import { lengthOfLastWord } from "./58.最后一个单词的长度";
+import { plusOne } from "./66.加一";
 
-console.log(lengthOfLastWord("   fly me   to   the moon    "))
+console.log(plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]
+    ))
