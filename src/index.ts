@@ -1,3 +1,3 @@
-import { addBinary } from "./67.二进制求和";
+import { mySqrt } from "./69.x-的平方根";
 
-console.log(addBinary('1010','1011'))
+console.log(mySqrt(64))
