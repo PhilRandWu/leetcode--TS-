@@ -1,3 +1,12 @@
-import { mySqrt } from "./69.x-的平方根";
+import { climbStairs } from "./70.爬楼梯";
 
-console.log(mySqrt(64))
+/*
+ * @Description: 
+ * @Author: PhilRandWu
+ * @Github: https://github/PhilRandWu
+ * @Date: 2022-06-17 15:54:24
+ * @LastEditTime: 2022-06-17 15:59:35
+ * @LastEditors: PhilRandWu
+ */
+console.log(climbStairs(45));
+// 1836311903
