@@ -2,14 +2,14 @@
  * @Description: 
  * @Author: PhilRandWu
  * @Github: https://github/PhilRandWu
- * @Date: 2022-06-19 19:28:23
- * @LastEditTime: 2022-06-19 19:31:00
+ * @Date: 2022-06-19 19:36:30
+ * @LastEditTime: 2022-06-19 19:37:45
  * @LastEditors: PhilRandWu
  */
 /*
- * @lc app=leetcode.cn id=94 lang=typescript
+ * @lc app=leetcode.cn id=100 lang=typescript
  *
- * [94] 二叉树的中序遍历
+ * [100] 相同的树
  */
 
 // @lc code=start
@@ -27,13 +27,17 @@
  * }
  */
 
-function inorderTraversal(root: TreeNode | null): number[] {
-    if(!root) {
-        return [];
+function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
+    if(p === q) {
+        return true;
     }
-    return [...inorderTraversal(root.left),
-        root.val,
-        ...inorderTraversal(root.right)];
+    if(p && !q || !p && q) {
+        return false;
+    }
+    if(p.val !== q.val) {
+        return false;
+    }
+    return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
 };
 // @lc code=end
 
