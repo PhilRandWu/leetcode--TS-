@@ -2,14 +2,14 @@
  * @Description: 
  * @Author: PhilRandWu
  * @Github: https://github/PhilRandWu
- * @Date: 2022-06-19 19:36:30
- * @LastEditTime: 2022-06-19 19:37:45
+ * @Date: 2022-06-19 19:44:08
+ * @LastEditTime: 2022-06-19 19:44:08
  * @LastEditors: PhilRandWu
  */
 /*
- * @lc app=leetcode.cn id=100 lang=typescript
+ * @lc app=leetcode.cn id=101 lang=typescript
  *
- * [100] 相同的树
+ * [101] 对称二叉树
  */
 
 // @lc code=start
@@ -27,17 +27,24 @@
  * }
  */
 
-function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
-    if(p === q) {
+function isSymmetric(root: TreeNode | null): boolean {
+    if(!root) {
         return true;
     }
-    if(p && !q || !p && q) {
-        return false;
-    }
-    if(p.val !== q.val) {
-        return false;
-    }
-    return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
+    return Symmetrytree(root.left,root.right)
 };
+
+function Symmetrytree(root1: TreeNode | null,root2: TreeNode | null): boolean {
+    if(!root1 && !root2) {
+        return true;
+    }
+    if(!root1 && root2 || root1 && !root2) {
+        return false;
+    }
+    if(root1.val !== root2.val) {
+        return false;
+    }
+    return Symmetrytree(root1.left,root2.right) && Symmetrytree(root1.right,root2.left);
+}
 // @lc code=end
 
