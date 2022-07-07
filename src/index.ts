@@ -1,3 +1,8 @@
-import { merge } from "./88.合并两个有序数组";
-
-console.log(merge([1,2,3,0,0,0],3,[2,5,6],3))
+/*
+ * @Description: 
+ * @Author: PhilRandWu
+ * @Github: https://github/PhilRandWu
+ * @Date: 2022-07-06 22:10:21
+ * @LastEditTime: 2022-07-06 22:10:21
+ * @LastEditors: PhilRandWu
+ */
