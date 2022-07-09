@@ -1,11 +1,11 @@
-import { maxProfit } from "./121.买卖股票的最佳时机";
-
 /*
  * @Description: 
  * @Author: PhilRandWu
  * @Github: https://github/PhilRandWu
- * @Date: 2022-07-06 22:10:21
- * @LastEditTime: 2022-07-09 21:53:33
+ * @Date: 2022-07-09 22:15:36
+ * @LastEditTime: 2022-07-09 22:30:29
  * @LastEditors: PhilRandWu
  */
-console.log(maxProfit([1,2]))
+import { isPalindrome } from "./125.验证回文串";
+
+console.log(isPalindrome("ab_a"))
