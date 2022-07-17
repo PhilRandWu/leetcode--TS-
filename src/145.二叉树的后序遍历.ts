@@ -2,14 +2,14 @@
  * @Description: 
  * @Author: PhilRandWu
  * @Github: https://github/PhilRandWu
- * @Date: 2022-07-17 21:17:28
- * @LastEditTime: 2022-07-17 21:29:21
+ * @Date: 2022-07-17 21:33:19
+ * @LastEditTime: 2022-07-17 21:37:21
  * @LastEditors: PhilRandWu
  */
 /*
- * @lc app=leetcode.cn id=144 lang=typescript
+ * @lc app=leetcode.cn id=145 lang=typescript
  *
- * [144] 二叉树的前序遍历
+ * [145] 二叉树的后序遍历
  */
 
 // @lc code=start
@@ -27,35 +27,32 @@
  * }
  */
 
-function preorderTraversal(root: TreeNode | null): number[] {
-    // 第一种方法
+function postorderTraversal(root: TreeNode | null): number[] {
+    // 第一种写法
     // const result: number[] = [];
 
     // const findOrder = (node: TreeNode | null) => {
     //     if(node === null) {
     //         return;
     //     }
-    //     result.push(node.val);
     //     findOrder(node.left);
     //     findOrder(node.right);
+    //     result.push(node.val);
     // }
 
     // findOrder(root);
-
     // return result;
 
-    // 第二种方法
-    if(root === null) {
+    // 第二种写法
+    if (root === null) {
         return [];
     }
 
     return [
+        ...postorderTraversal(root.left),
+        ...postorderTraversal(root.right),
         root.val,
-        ...preorderTraversal(root.left),
-        ...preorderTraversal(root.right)
     ]
 };
-
-
 // @lc code=end
 
